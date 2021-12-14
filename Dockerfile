@@ -1,4 +1,4 @@
 FROM openjdk:11
-COPY demo-0.0.1-SNAPSHOT.jar /usr/src/myapp/demo-0.0.1-SNAPSHOT.jar
+COPY demo-v1.jar /usr/src/myapp/demo.jar
 WORKDIR /usr/src/myapp
-ENTRYPOINT ["java","-jar","demo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","demo.jar"]
