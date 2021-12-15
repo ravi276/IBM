@@ -33,6 +33,11 @@ EmployeeHandler handler;
 		employee empData=handler.saveData(emp);
 		return ResponseEntity.status(HttpStatus.CREATED).body(empData);
 	}
+	@GetMapping("/hello")
+	public String returnData()
+	{
+		return "Welcome to Service";
+	}
 		
 
 
